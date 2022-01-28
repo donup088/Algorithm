@@ -19,11 +19,11 @@ def solution(info, query):
                     info_dict[tmp].append(int(score))  # 그 조합의 key값에 점수 추가
                 else:
                     info_dict[tmp] = [int(score)]
-    print(info_dict)
+    
 
     for k in info_dict:
         info_dict[k].sort()  # dict안의 조합들을 점수순으로 정렬
-    print(info_dict)
+    
     for qu in query:  # query도 마찬가지로 key와 value로 분리
         myqu = qu.split(' ')
         qu_key = myqu[:-1]

@@ -1,5 +1,4 @@
 def solution(n, words):
-    answer = []
     history=[]
     number, order = 0,0
     last_word=words[0][-1]
